@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
-const ThemeButton = ({themeName}) => {
-    return <ThemeButtonStyled className ="theme-name">{themeName}</ThemeButtonStyled>
+const ThemeButton = ({themeName, onClick}) => {
+    return <ThemeButtonStyled className ="theme-name" onClick={onClick}>{themeName}</ThemeButtonStyled>
 }
 
 const ThemeButtonStyled = styled.div`
